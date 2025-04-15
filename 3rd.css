@@ -1,0 +1,141 @@
+/* 3rd.css */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('globe-airplane.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.google-button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.google-button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.separator {
+    color: #777;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 0.9em;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 0.9em;
+}
+
+.email-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.email-button:hover {
+    background-color: #388e3c;
+}
+
+.terms {
+    font-size: 0.7em;
+    color: #777;
+    margin-top: 10px;
+}
+
+.terms a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 0.85em;
+    }
+
+    .google-button,
+    .separator,
+    .input-group label,
+    .input-group input,
+    .email-button,
+    .terms {
+        font-size: 0.8em;
+    }
+
+    .google-button img {
+        width: 18px;
+        margin-right: 8px;
+    }
+}
